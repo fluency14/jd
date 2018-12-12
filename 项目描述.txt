@@ -1,0 +1,18 @@
+一.分辨率:1366x768
+二.效果:
+	1.首页:轮播图 选项卡 二级导航 菜单栏挂起 定位改变left值实现左右滑动  返回顶部...
+	2.列表页:轮播图 选项卡 二级导航 楼层滚动 返回顶部...
+	3.详情页:二级导航 选项卡 瀑布流 放大镜 ...
+	4.登录:选项卡 ajax数据验证用户名是否存在 正则验证密码位数是否正确...
+	5.注册:遮罩 拖拽 正则匹配手机号...
+三.项目里用到技术:
+	html
+	css
+	js(jQuery)
+四.目录结构:
+	assets:      images 所有图片
+	                js:      index.js主页     list.js列表页     details.css详情页     login.css登录页     register.css注册页 reset.css全局样式
+		css:    index.css主页     list.css列表页     details.css详情页     login.css登录页     register.css注册页
+		fonts: 字体图标
+	1.php     2.php
+	index.html主页   list.html列表页   details.html详情页   login.html登录页   register.html注册页

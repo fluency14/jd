@@ -1,0 +1,297 @@
+*{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+a{
+	text-decoration:none;
+	color:#999999;
+	font-size:12px;
+}
+a:hover{
+	color:red;
+}
+/*整体页面宽高背景色*/
+body{
+	width:100%;
+	height:700px;
+	background:#fff;
+}
+/*顶部信息*/
+.login_top{
+	width:990px;
+	height:80px;
+	margin:0 auto;
+	position:relative;
+}  
+.login_top .top_p1{
+	font-size:26px;
+	position:absolute;
+	top:30px;
+	left:205px;
+}
+.login_top .top_p2{
+	position:absolute;
+	bottom:0;
+	right:0;
+	font-size:12px;
+	color:#999;
+}
+.icon-xiaoxi{
+	font-size:14px;
+	color:#FF2D54;
+}
+.login_warn{
+	width:100%;
+	height:40px;
+	background:#FFF8F0;
+	margin-top:10px;
+	text-align:center;
+	line-height:40px;
+	font-size:12px;
+	color:#999;
+}
+.login_warn span{
+	color:#444;
+}
+.login_most{
+	width:100%;
+	height:475px;
+	background:#E93854;
+	text-align:center;
+	position:relative;
+}
+.login_box{
+	width:345px;
+	box-sizing:border;
+	background:white;
+	position:absolute;
+	right:180px;
+	top:10px;
+}
+.login_boxwarn{
+	width:345px;
+	height:40px;
+	background:#FFF8F0;
+	text-align:center;
+	line-height:40px;
+	font-size:13px;
+	color:#999;
+}
+
+/*登录选项卡*/
+.tab{
+	
+	margin:0 auto;
+}
+.title li:nth-of-type(1){
+    border-right:1px solid #eee;
+}
+.title li{
+	float:left;
+	width:172.5px;
+	height: 55px;
+	box-sizing: border-box;
+	border-bottom: 1px solid #ccc;
+	text-align: center;
+	line-height: 55px;
+	color:#333;
+	font-size:20px;
+}
+.title li:hover{
+	color:#E93854;
+	font-weight:bold;
+
+}
+.title li.cur{
+	color:#E93854;
+	font-weight:bold;
+}
+.con li:nth-of-type(1){
+	width:345px;
+	height:335px;
+	background:white;
+}
+.con li:nth-of-type(2){
+	width:345px;
+	height:310px;
+	background:white;
+}
+.con li.hide{
+	display:none;
+}
+.login_way{
+	width:345px;
+	height:50px;
+	background:#FCFCFC;
+	position:relative;
+}
+.qq_wechat{
+	width:155px;
+	height:50px;
+	position:absolute;
+	top:0;
+	left:0;
+	text-align:center;
+	line-height:50px;
+	font-size:12px;
+}
+.now_reg{
+	width:100px;
+	height:50px;
+	position:absolute;
+	top:0;
+	right:0;
+	background:white;
+	text-align:center;
+	line-height:50px;
+	font-size:16px;
+}
+.now_reg a{
+	color:#E4393C;
+}
+.jiantouyou{
+	color:#E4393C;
+	font-size:16px;
+}
+.con img{
+	padding-top:20px;
+}
+.con li:nth-of-type(1){
+	height:280px;
+}
+.con li:nth-of-type(2){
+	height:255px;
+}
+.conp{
+	width:345px;
+	height:15px;
+	margin-top:20px;
+	font-size:13px;
+	color:#333;
+	text-align:center;
+}
+.conp span{
+	color:#E4393C;
+}
+.conp2{
+	width:345px;
+	height:30px;
+	line-height:30px;
+	color:#ccc;
+	font-size:12px;
+	margin-top:20px;
+}
+.conicon1{
+	font-size:24px;
+	color:#ccc;
+}
+.conicon{
+	font-size:18px;
+	color:#ccc;
+}
+/*用户框*/
+.login_input{
+	height:42px;
+	width:305px;
+	margin-top:33px;
+	margin-left:20px;
+	
+}
+
+.login_p{
+	height:15px;
+    font-size: 12px;
+
+}
+.login_input img{
+	padding-top:0;
+
+	border-top:1px solid #BDBDBD;
+	border-left:1px solid #BDBDBD;
+	border-bottom:1px solid #BDBDBD;
+	width:40px;
+	height:40px;
+	float:left;
+}
+.login_input .user_input{
+	width:259px;
+	height:38px;
+	float:right;
+}
+
+/*密码框*/
+.login_pwd{
+	height:45px;
+	width:305px;
+	margin-top:8px;
+	margin-left:20px;
+}
+.login_pwd img{
+	padding-top:0;
+	border-top:1px solid #BDBDBD;
+	border-left:1px solid #BDBDBD;
+	border-bottom:1px solid #BDBDBD;
+	width:40px;
+	height:40px;
+	float:left;
+}
+form{
+	float:right;
+}
+.pwd_input{
+	height:38px;
+	width:259px;
+	/*border:1px solid #BDBDBD;*/
+	float:right;
+}
+.forget_pwd{
+	position:absolute;
+	right:20px;
+	top:250px;
+}
+.forget_pwd a{
+	color:#555;
+}
+.forget_pwd a:hover{
+	color:#E4393C;
+	text-decoration:underline;
+}
+.but_login button{
+	width:305px;
+	height:35px;
+	border:0;
+	background:#E4393C;
+	position:absolute;
+	top:285px;
+	left:20px;
+	text-align:center;
+	color:white;
+	font-size:20px;
+	cursor:pointer;
+}
+
+.login_pwd #pMsg{
+	height:18px;
+	text-align:center;
+	font-size:12px;
+}
+/*底部*/
+.login_bottom{
+	width:940px;
+	height:60px;
+	margin:20px auto;
+	text-align:center;
+	color:#555;
+	font-size:12px;
+}
+.login_bottom a{
+	color:#555;
+}
+.login_bottom a:hover{
+	color:#E4393C;
+	text-decoration:underline;
+}
+.login_bottom p{
+	margin-top:15px;
+}

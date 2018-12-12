@@ -1,0 +1,737 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>京东详情页</title>
+	<link rel="stylesheet" href="assets/css/reset.css">
+	<link rel="stylesheet" href="assets/css/iconfont.css">
+	<link rel="stylesheet" href="assets/css/details.css">
+	<script src="assets/js/jquery-1.8.3.min.js"></script>
+	<script src="assets/js/ajax3.0.js"></script>
+</head>
+<body>
+	<a href="#">
+		<div class="fix_backtop">
+			<i class="iconfont icon-yuanxingjiantoushang"></i>
+		</div>
+		<div class="fix_topword">
+			顶部
+		</div>
+	</a>
+	
+	<div class="fix_smallmask">
+		
+	</div>
+	<div class="fix_mask fix_maskone">
+		<i class="iconfont icon-kefu"></i>
+	</div>
+	<div class="fix_mask fix_masktwo">
+		<i class="iconfont icon-gouwuchekong gouwuche"></i>
+	</div>
+	<div class="fix_mask fix_maskthree">
+		<i class="iconfont icon-shoucang"></i>
+	</div>
+	<div class="fix_mask fix_maskfour">
+		<i class="iconfont icon-shizhong"></i>
+	</div>
+	<div class="fix_mask fix_maskfive">
+		<i class="iconfont icon-xiaoxi"></i>
+	</div>
+	<div class="fix_mask fix_masksix">
+		<i class="iconfont icon-jimi-copy-copy"></i>
+	</div>
+	<div class="fix_mask fix_maskseven">
+		<i class="iconfont icon-fankui"></i>
+	</div>
+	<!-- 顶部导航栏 -->
+	<div class="beau_top">
+		<div class="beautop_word">
+			<div class="topnav">
+				<div class="top_nav">
+					<div class="addr_home">
+					<img src="assets/images/smallhome.png" alt="">
+					<div class="jd_index"><a href="indexs.html">京东首页</a></div>
+					</div>
+					<div class="top_navaddr">
+						<div class="addr_title">
+							<a href="#"><i class="iconfont icon-dian1 dian_position"></i>北京</a>
+						</div>
+						<div class="addr_menu">
+							<div class="menu menuone">
+								<a href="#" class="menu_beijing">北京</a>
+								<a href="#">上海</a>
+								<a href="#">天津</a>
+								<a href="#">重庆</a>
+								<a href="#">河北</a>
+							</div>
+							<div class="menu menutwo">
+								<a href="#">山西</a>
+								<a href="#">河南</a>
+								<a href="#">辽宁</a>
+								<a href="#">吉林</a>
+								<a href="#">黑龙江</a>
+							</div>
+							<div class="menu menuthree">
+								<a href="#">山东</a>
+								<a href="#">江苏</a>
+								<a href="#">安徽</a>
+								<a href="#">浙江</a>
+								<a href="#">内蒙古</a>
+							</div>
+							<div class="menu menufour">
+								<a href="#">福建</a>
+								<a href="#">湖北</a>
+								<a href="#">湖南</a>
+								<a href="#">广东</a>
+								<a href="#">广西</a>
+							</div>
+							<div class="menu menufive">
+								<a href="#">江西</a>
+								<a href="#">四川</a>
+								<a href="#">海南</a>
+								<a href="#">贵州</a>
+								<a href="#">云南</a>
+							</div>
+							<div class="menu menusix">
+								<a href="#">西藏</a>
+								<a href="#">陕西</a>
+								<a href="#">甘肃</a>
+								<a href="#">青海</a>
+								<a href="#">宁夏</a>
+							</div>
+							<div class="menu menuseven">
+								<a href="#">新疆</a>
+								<a href="#">港澳</a>
+								<a href="#">台湾</a>
+								<a href="#">海外</a>
+								<a href="#">钓鱼岛</a>
+							</div>
+						</div>
+					</div>
+					<span class="top_spanone"><a href="login.html">你好,请登录</a></span>
+					<span><a href="register.html" class="nav_free">免费注册</a></span>
+					<span>|</span>
+					<span><a href="#">我的订单</a></span>
+					<span>|</span>
+					<div class="myjd">
+						<div class="myjdword">
+							<span class="top_myjd"><a href="#">我的京东<i class="iconfont icon-jiantou"></i></a></span>
+						</div>
+						<div class="top_myjdmenu">
+							<div class="myjdone">
+								<a href="#">待处理订单</a>
+								<a href="#">消息</a>
+							</div>
+							<div class="myjdone">
+								<a href="#">返修退换货</a>
+								<a href="#">我的问答</a>
+							</div>
+							<div class="myjdone">
+								<a href="#">降价商品</a>
+								<a href="#">我的关注</a>
+							</div>
+							<div class="myjdone">
+								<a href="#">我的京豆</a>
+								<a href="#">我的优惠券</a>
+							</div>
+							<div class="myjdone">
+								<a href="#">我的白条</a>
+								<a href="#">我的理财</a>
+							</div>
+						</div>
+					</div>
+					<span>|</span>
+					<span><a href="#">京东会员</a></span>
+					<span>|</span>
+					<div class="company">
+						<div class="companyword">
+							<span class="top_company"><a href="#">企业采购<i class="iconfont icon-jiantou"></i></a></span>
+						</div>
+						<div class="company_buy">
+							<div class="myjdone">
+								<a href="#">待处理订单</a>
+								<a href="#">消息</a>
+							</div>
+							<div class="myjdone">
+								<a href="#">返修退换货</a>
+								<a href="#">我的问答</a>
+							</div>
+						</div>
+					</div>
+					<span>|</span>
+					<div class="customer">
+				<div class="customerword">
+					<span class="top_company"><a href="#">客户服务<i class="iconfont icon-jiantou"></i></a></span>
+				</div>
+				<div class="customer_buy">
+					<div class="cust_word">
+						<p class="cust_p">客户</p>
+						<a href="#">帮助中心</a>
+						<a href="#">售后服务</a>
+						<br>
+						<a href="#">在线客服</a>
+						<a href="#">意见建议</a>
+						<br>
+						<a href="#">电话客服</a>
+						<a href="#">客服邮箱</a>
+						<br>
+						<a href="#">金融咨询</a>
+						<a href="#">全球售客服</a>
+					</div>
+					<div class="cust_word">
+						<p class="cust_p">商户</p>
+						<a href="#">合作招商</a>
+						<a href="#">学习中心</a>
+						<br>
+						<a href="#">商家后台</a>
+						<a href="#">京麦工作台</a>
+						<br>
+						<a href="#">商家帮助</a>
+						<a href="#">规则平台</a>
+					</div>
+				</div>
+			</div>
+			<span>|</span>
+			<div class="webnav">
+				<div class="webnavword">
+					<span class="top_company"><a href="#">网站导航<i class="iconfont icon-jiantou"></i></a></span>
+				</div>
+				<div class="web_nav">
+					<div class="webnav_word">
+						<p class="web_p">特色主题</p>
+						<ul class="web_ul">
+							<li>京东试用</li>
+							<li>京东会员</li>
+							<li>装机大师</li>
+							<li>优惠券<li>
+							<li>京东金融科技<li>
+						</ul>
+						
+						<ul class="web_ul">
+							<li>京东金融</li>
+							<li>京东预售</li>
+							<li>0元测评</li>
+							<li>秒杀<li>
+							<li>ln货推荐<li>
+						</ul>
+
+						<ul class="web_ul">
+							<li>全球售</li>
+							<li>买什么</li>
+							<li>定期送</li>
+							<li>闪购<li>
+							<li>陪伴计划<li>
+						</ul>
+						
+						<ul class="web_ul">
+							<li>国际站</li>
+							<li>俄语站</li>
+							<li>港澳售</li>
+							<li>印尼站<li>
+							<li>出海招商<li>
+						</ul>
+					</div>
+					<div class="webnav_word webnav_word2">
+						<p class="web_p">行业频道</p>
+						<ul class="web_ul">
+							<li>手机</li>
+							<li>电脑办公</li>
+							<li>服装城</li>
+							<li>母婴<li>
+							<li>整车<li>
+						</ul>
+						
+						<ul class="web_ul">
+							<li>智能数码</li>
+							<li>家用电器</li>
+							<li>京东生鲜</li>
+							<li>食品<li>
+							<li>图书<li>
+						</ul>
+
+						<ul class="web_ul">
+							<li>玩3C</li>
+							<li>京东智能</li>
+							<li>家装城</li>
+							<li>农资频道<li>
+							<li>京东元器件<li>
+						</ul>
+						
+					</div>
+					<div class="webnav_word webnav_word2">
+						<p class="web_p">生活服务</p>
+						<ul class="web_ul">
+							<li>京东众筹</li>
+							<li>京东小金库</li>
+							<li>水电煤</li>
+							<li>机票酒店<li>
+							<li>游戏<li>
+						</ul>
+						
+						<ul class="web_ul">
+							<li>白条</li>
+							<li>理财<li>
+							<li>彩票</li>
+							<li>电影票</li>
+						</ul>
+
+						<ul class="web_ul">
+							<li>京东金融App</li>
+							<li>话费</li>
+							<li>旅行</li>
+							<li>京东到家<li>
+						</ul>
+						
+					</div>
+					<div class="webnav_word webnav_word4">
+						<p class="web_p">更多精选</p>
+						<ul class="web_ul">
+							<li>合作招商</li>
+							<li>企业采购</li>
+							<li>乡村招募</li>
+							<li>京东社区<li>
+						</ul>
+						
+						<ul class="web_ul">
+							<li>京东通信</li>
+							<li>服务市场<li>
+							<li>校园加盟</li>
+							<li>游戏社区</li>
+						</ul>
+
+						<ul class="web_ul">
+							<li>京东E卡</li>
+							<li>办公生活馆</li>
+							<li>京友邦</li>
+							<li>知识产权维权<li>
+						</ul>
+						
+					</div>
+				</div>
+			</div>
+					<span>|</span>
+					<span><a href="#">手机京东</a></span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 顶部搜索框 -->
+	<div class="list_headernav">
+		<div class="list_navdetail">
+			<a href="indexs.html"><img src="assets/images/jdlogo.png" alt=""></a>
+			<div class="search_nav">
+				<div class="search_box">
+					<div class="search_title">
+						全部分类﹀
+					</div>
+					<div class="search_detail">
+						<ul id="tab_ul">
+							<li><a href="#">家用电器</a></li>
+							<li><a href="#">手机、</a><a href="#">运营商、</a><a href="#">数码</a></li>
+							<li><a href="#">电脑、</a><a href="#">办公</a></li>
+							<li><a href="#">家居、</a><a href="#">家具、</a><a href="#">家装、</a><a href="#">厨具</a></li>
+							<li><a href="#">男装、</a><a href="#">女装、</a><a href="#">童装、</a><a href="#">内衣</a></li>
+							<li><a href="#">美妆、</a><a href="#">个护清洁、</a><a href="#">宠物</a></li>
+							<li><a href="#">女鞋、</a><a href="#">箱包、</a><a href="#">钟表、</a><a href="#">珠宝</a></li>
+							<li><a href="#">男鞋、</a><a href="#">运动、</a><a href="#">户外</a></li>
+							<li><a href="#">房产、</a><a href="#">汽车、</a><a href="#">汽车用品</a></li>
+							<li><a href="#">母婴、</a><a href="#">玩具乐器</a></li>
+							<li><a href="#">食品、</a><a href="#">酒类、</a><a href="#">生鲜、</a><a href="#">特产</a></li>
+							<li><a href="#">艺术、</a><a href="#">礼品鲜花、</a><a href="#">农资绿植</a></li>
+							<li><a href="#">医药保健、</a><a href="#">计生情趣</a></li>
+							<li><a href="#">图书、</a><a href="#">音像、</a><a href="#">电子书</a></li>
+							<li><a href="#">机票、</a><a href="#">酒店、</a><a href="#">旅游、</a><a href="#">生活</a></li>
+							<li><a href="#">理财、</a><a href="#">众筹、</a><a href="#">白条、</a><a href="#">保险</a></li>
+							<li><a href="#">安装、</a><a href="#">维修、</a><a href="#">清洗保养</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="input_div">
+				<input type="text" class="searc_input" placeholder="面膜">
+				<div class="input_right">
+					搜本店
+				</div>
+				<div class="input_right2">
+					搜全站
+				</div>
+				<div class="input_bottom">
+					<a href="">蓝牙耳机</a>
+					<a href="">mp3播放机</a>
+					<a href="">捷波朗</a>
+					<a href="">森海塞尔</a>
+					<a href="">beats</a>
+					<a href="">蓝牙音箱</a>
+				</div>
+			</div>
+			<div class="header_cart">
+				<div class="cart_title">
+					
+					<i class="iconfont icon-gouwuchekong cccccart"></i>     我的购物车(0) >
+				</div>
+				<div class="cart_menu">
+					<i class="iconfont icon-gouwuche3-copy-copy-copy-copy-copy-copy"></i>购物车中还没有商品,赶紧选购吧!
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="det_phonead">
+		<img src="assets/images/phonead.png" alt="" width="100%">
+	</div>
+	<div class="detail_list">
+		<ul class="detail_ul">
+			<li>查看所有商品 ☷ </li>
+			<li>首页</li>
+			<li>Mate系列</li>
+			<li>P系列</li>
+			<li>nova/麦芒系列</li>
+			<li>畅享系列</li>
+			<li>穿戴设备</li>
+			<li>笔记本</li>
+			<li>平板</li>
+			<li>智能家居</li>
+			<li>配件</li>
+		</ul>
+	</div>
+	<div class="detail_media">
+		<p class="detail_medp1"><span>数码</span> > <span>影音娱乐</span> > <span>耳机/耳麦</span>> <span>华为(HUAWEI)</span> > <span>华为CM-H1</span></p>
+		<p class="detail_medp2"><span>华为京东官方自营旗舰店</span>  <i class="iconfont icon-kefu smallkefu"></i><span>联系客服</span> <i class="iconfont icon-shoucang heart"></i> <span>关注店铺</span></p>
+	</div>
+	<div class="detail_fang">
+		<!-- 小图 -->
+		<div class="wrap" id="wrap">
+			<div class="small" id="small">
+				<img src="assets/images/fang1.jpg">
+				<div class="mask" id="mask"></div>
+			</div>
+			<div class="big" id="big">
+				<img src="assets/images/fangbig1.jpg">
+			</div>
+		</div>
+		<!-- 点击图片列表 -->
+		<div  id="dian">
+			<ul style="left: 0px">
+				<li><img src="assets/images/fang1.jpg" alt=""></li>
+				<li><img src="assets/images/fang2.jpg" alt=""></li>
+				<li><img src="assets/images/fang3.jpg" alt=""></li>
+				<li><img src="assets/images/fang4.jpg" alt=""></li>
+				<li><img src="assets/images/fang5.jpg" alt=""></li>
+				<li><img src="assets/images/fang6.jpg" alt=""></li>
+			</ul>
+		</div>
+		<div id="left"><i class="iconfont icon-jiantou1 zuojiantou"></i></div>
+		<div id="right"><i class="iconfont icon-jiantou-copy youjantou"></i></div>
+		<div class="detail_word">
+			<p class="detail_wordp1">华为（ HUAWEI） 华为无线耳机 真无线蓝牙耳机 双耳蓝牙音乐耳机 Freebuds 碳晶黑</p>
+			<p class="detail_wordp2">可触控双耳蓝牙音乐耳机 无线设计 双击触控 降噪通话 震撼音质</p>
+			<div class="detail_wordp3"><i class="iconfont icon-shandian shandian"></i>京东闪购
+				<div class="detail_wordp4">预计9月26日00:00开始</div>
+			</div>
+			<div class="detail_money">
+				<span>京 东 价</span><span>¥759.00</span><span>降价通知</span>
+				<div class="det_judge1">累计评价</div>
+				<div class="det_judge2">1.3万+</div>
+			</div>
+			<p class="money_p">增值业务 <span> &nbsp;以旧换新,回收换钱&nbsp; </span></p>
+			<p class="money_p money_p2">配 送 至  &nbsp;<a class="money_pspan">北京朝阳区三环以内﹀</a> 有货&nbsp;&nbsp;支持&nbsp;&nbsp;&nbsp;<span>99元免基础运费(20kg以内)</span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<span>京准达</span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<span>自提</span>&nbsp;&nbsp;&nbsp;</p>
+			<p class="money_p3">由 <span>京东</span> 发货, 并提供售后服务. 23:00前下单,预计<span>明天(09月26日)</span>送达</p>
+			<p class="money_p4">重&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;量&nbsp;&nbsp;&nbsp;0.04kg</p>
+			<div class="de_choose1">
+				<span>选择颜色</span><span>FreeBuds 真无线耳机 碳晶黑</span> <span>FreeBuds 真无线耳机 陶瓷白</span>
+			</div>
+			<div class="de_choose2">
+				<span>增值保障</span><span>2年全保修 ¥49</span> <span>3年免费换 ¥68</span> <span>2年意外换 ¥49</span><i class="iconfont icon-wenhao choose_wenhao"></i>
+			</div>
+			<div class="de_choose2 de_choose3">
+				<span>京东服务</span><span>延长质保1年 ¥29</span> <span>只换不修1年 ¥48</span><i class="iconfont icon-wenhao choose_wenhao"></i>
+			</div>
+			<div class="detail_num">1
+				<div class="num_plus">+</div>
+				<div class="num_degree">-</div>
+			</div>
+			<div class="detail_cart">
+				加入购物车
+			</div>
+			<p class="money_p">以旧换新 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;·支持7天无理由退货(拆封后不支持)</p>
+		</div>
+		<p class="fang_p">关注&nbsp;&nbsp;分享&nbsp;&nbsp;对比<span>举报</span></p>
+	</div>
+	<div class="detail_main">
+		<div class="hot_list">
+			<ul class="hotlist_tab" id="hotlist_tab">
+				<li class="hotlist_cur">人气配件</li>
+				<li>耳机/耳麦</li>
+			</ul>
+			<ul class="hotlist_tabimg" id="hotlist_tabimg">
+				<li>
+					<div class="hotlist_div hotlistone">
+						<img src="assets/images/ren1.jpg" alt=""><img src="assets/images/ren3.png" alt=""><img src="assets/images/ren2.jpg" alt="">
+					</div>
+					
+					<div class="hotlist_div3">
+						<span class="span1">已选择0个配件<br></span>
+						<span class="span1">组合价</span><span class="span2">¥759.00</span>
+						<p class="hot_p1">立即购买</p>
+						<p class="hot_p2">配件选购中心</p>
+					</div>
+					<div class="hotlist_div2">
+						<img src="assets/images/ren4.png" alt="">
+					</div>
+				</li>
+				<li class="hotlist_hide">
+					
+				</li>
+			</ul>
+		</div>
+		<!-- 旗舰店 商品详情 -->
+		<div class="detail_shop clearfix">
+			<div class="flagship">
+				<div class="flagship_bottom">
+					华为京东自营官方旗舰店
+				</div>
+				<div class="flagship_left">
+					进店逛逛
+				</div>
+				<div class="flagship_right">
+					关注店铺
+				</div>
+			</div>
+			<div class="hot_list flag_word">
+				<ul class="hotlist_tab flag_ul" id="hotlist_tab">
+					<li class="hotlist_cur">商品介绍</li>
+					<li>规格与包装</li>
+					<li>售后保障</li>
+					<li>商品评价(1.3万+)</li>
+					<li>社区互动</li>
+				</ul>
+				<span>品牌： 华为（HUAWEI）</span>
+				<br>
+				<span>商品名称：华为CM-H1</span>
+				<span>商品编号：7066354</span>
+				<span>商品毛重：40.00g</span>
+				<span>商品产地：中国大陆</span>
+				<br>
+				<span>连接类型：无线</span>
+				<span>适用音乐类型：流行、摇滚、电音</span>
+				<span>用途：休闲娱乐</span>
+				<span>佩戴方式：其它</span>
+			</div>
+			<div class="detail_long1">
+				<div class="detail_superman">
+					<span>达人选购</span>
+				</div>
+				<div class="long_div">
+					<img src="assets/images/slp1.png" alt="">
+					<a>SOGEN 硕正智能骨传导骨感蓝牙耳机眼镜换近视镜框无线运动音乐可</a>
+					<p>￥698.00</p>
+				</div>
+				<div class="long_div">
+					<img src="assets/images/slp2.png" alt="">
+					<a>华为（ HUAWEI） 华为无线耳机 真无线蓝牙耳机 双耳蓝牙音乐耳机 </a>
+					<p>￥759.00</p>
+				</div>
+				<div class="long_div">
+					<img src="assets/images/slp3.png" alt="">
+					<a>SOGEN 硕正骨传导骨感蓝牙运动立体声立体声OPPO小米vivo通用跑步</a>
+					<p>￥469.00</p>
+				</div>
+				<div class="long_div">
+					<img src="assets/images/slp4.png" alt="">
+					<a>恩科（ENKOR）EB201 运动蓝牙耳机 无线入耳式跑步通话磁吸颈挂式</a>
+					<p>￥159.00</p>
+				</div>
+				<div class="long_div">
+					<img src="assets/images/slp5.png" alt="">
+					<a> 欧雷特 OVEVO X9 运动蓝牙MP3一体无线入耳式苹果小米OPP跑步游</a>
+					<p>￥248.00</p>
+				</div>
+				<div class="long_div">
+					<img src="assets/images/slp6.png" alt="">
+					<a>魅族（MEIZU）POP真无线蓝牙耳机 真无线入耳式蓝牙运动耳机 无线</a>
+					<p>￥499.00</p>
+				</div>
+			</div>
+
+			<div class="detail_long detail_long2">
+				<div class="detail_superman">
+					<span>看了又看</span>
+				</div>
+				<div class="long_div">
+					<img src="assets/images/kkk1.png" alt="">
+					<a>Apple AirPods 蓝牙无线耳机 适用于iPhone7/8/X手机耳机</a>
+					<p>￥1276.00</p>
+				</div>
+				<div class="long_div">
+					<img src="assets/images/kkk2.png" alt="">
+					<a>索爱（soaiy）T1 真无线蓝牙耳机 商务入耳式 立体声 迷你运动跑步重 </a>
+					<p>￥199.00</p>
+				</div>
+				<div class="long_div">
+					<img src="assets/images/kkk3.png" alt="">
+					<a>魅族（MEIZU）POP真无线蓝牙耳机 真无线入耳式蓝牙运动耳机 无线</a>
+					<p>￥499.00</p>
+				</div>
+				<div class="long_div">
+					<img src="assets/images/kkk4.png" alt="">
+					<a>酷狗（KUGOU）小酷M1 无线运动蓝牙耳机 手机耳机 磁吸入耳式耳机 </a>
+					<p>￥129.00</p>
+				</div>
+				<div class="long_div">
+					<img src="assets/images/kkk5.png" alt="">
+					<a>Bose SoundSport Free 真无线蓝牙耳机--黑色 运动耳机</a>
+					<p>￥1798.00</p>
+				</div>
+				<div class="long_div">
+					<img src="assets/images/kkk6.png" alt="">
+					<a>JBL T280BT 入耳式蓝牙无线耳机 运动耳机 手机游戏耳机 苹果安卓通</a>
+					<p>￥488.00</p>
+				</div>
+			</div>
+			<div class="super_pic">
+				<img src="assets/images/long2.png" alt="">
+			</div>
+		</div>
+
+	</div>
+	
+	
+	<div id="cont">
+		<!-- 页面显示的图片 -->
+		<img src="assets/images/pu1.jpg" alt="">
+		<img src="assets/images/pu2.jpg" alt="">
+		<img src="assets/images/pu3.jpg" alt="">
+		<img src="assets/images/pu4.jpg" alt="">
+		<img src="assets/images/pu5.jpg" alt="">
+		<img src="assets/images/pu6.jpg" alt="">
+		<img src="assets/images/pu7.jpg" alt="">
+		<img src="assets/images/pu8.jpg" alt="">
+		<img src="assets/images/pu9.jpg" alt="">
+		<img src="assets/images/pu10.jpg" alt="">
+		<img src="assets/images/pu11.jpg" alt="">
+		<img src="assets/images/pu12.jpg" alt="">
+	</div>
+	<!-- 底部 -->
+	<div class="footer">
+		<div class="main_footer">
+			<img src="assets/images/long.png" alt="" width="100%" height="75px">
+		</div>
+		<div class="footer_boxone">
+			<div class="boxone_detail">
+				<div class="box_word boxone_lione">
+					<ul class="box_ul">
+						<h5>购物指南</h5>
+						<li>购物流程</li>
+						<li>会员介绍</li>
+						<li>生活旅行</li>
+						<li>常见问题</li>
+						<li>大家电</li>
+						<li>联系客服</li>
+					</ul>
+				</div>
+				<div class="box_word boxone_lione">
+					<ul class="box_ul">
+						<h5>配送方式</h5>
+						<li>上门自提</li>
+						<li>211限时达</li>
+						<li>配送服务查询</li>
+						<li>配送费收取标准</li>
+						<li>海外配送</li>
+					</ul>
+				</div>
+				<div class="box_word boxone_lione">
+					<ul class="box_ul">
+						<h5>支付方式</h5>
+						<li>货到付款</li>
+						<li>在线支付</li>
+						<li>分期付款</li>
+						<li>邮局汇款</li>
+						<li>公司汇款</li>
+					</ul>
+				</div>
+				<div class="box_word boxone_lione">
+					<ul class="box_ul">
+						<h5>售后服务</h5>
+						<li>售后政策</li>
+						<li>价格保护</li>
+						<li>退款说明</li>
+						<li>返修/退换货</li>
+						<li>取消订单</li>
+					</ul>
+				</div>
+				<div class="box_word boxone_lione">
+					<ul class="box_ul">
+						<h5>特色服务</h5>
+						<li>夺宝岛</li>
+						<li>DIY装机</li>
+						<li>延保服务</li>
+						<li>京东E卡</li>
+						<li>京东通信</li>
+						<li>京东JD+</li>
+					</ul>
+				</div>	
+			</div>
+		</div>
+		<div class="footer_boxtwo">
+			<div class="footer_word footer_topword">
+				<a href="#">关于我们&nbsp;&nbsp;<span>|</span>&nbsp;&nbsp;</a>
+				<a href="#">联系我们&nbsp;&nbsp;<span>|</span>&nbsp;&nbsp;</a>
+				<a href="#">联系客服&nbsp;&nbsp;<span>|</span>&nbsp;&nbsp;</a>
+				<a href="#">合作招商&nbsp;&nbsp;<span>|</span>&nbsp;&nbsp;</a>
+				<a href="#">商家帮助&nbsp;&nbsp;<span>|</span>&nbsp;&nbsp;</a>
+				<a href="#">营销中心&nbsp;&nbsp;<span>|</span>&nbsp;&nbsp;</a>
+				<a href="#">手机京东&nbsp;&nbsp;<span>|</span>&nbsp;&nbsp;</a>
+				<a href="#">友情链接&nbsp;&nbsp;<span>|</span>&nbsp;&nbsp;</a>
+				<a href="#">销售联盟&nbsp;&nbsp;<span>|</span>&nbsp;&nbsp;</a>
+				<a href="#">京东社区&nbsp;&nbsp;<span>|</span>&nbsp;&nbsp;</a>
+				<a href="#">风险监测&nbsp;&nbsp;<span>|</span>&nbsp;&nbsp;</a>
+				<a href="#">隐私政策&nbsp;&nbsp;<span>|</span>&nbsp;&nbsp;</a>
+				<a href="#">京东公益&nbsp;&nbsp;<span>|</span>&nbsp;&nbsp;</a>
+				<a href="#">English Site&nbsp;&nbsp;<span>|</span>&nbsp;&nbsp;</a>
+				<a href="#">Media & lR</a>
+			</div>
+			<div class="footer_word footer_pol">
+				<a href="#">京公网安备 11000002000088号&nbsp;&nbsp;<span>|</span>&nbsp;&nbsp;</a>
+				<a href="#">京ICP证070359号&nbsp;&nbsp;<span>|</span>&nbsp;&nbsp;</a>
+				<a href="#">互联网药品信息服务资格证编号(京)-经营性-2014-0008&nbsp;&nbsp;<span>|</span>&nbsp;&nbsp;</a>
+				<a href="#">新出发京零 字第大120007号</a>
+			</div>
+			<div class="footer_word">
+				<a href="#">互联网出版许可证编号新出网证(京)字150号&nbsp;&nbsp;<span>|</span>&nbsp;&nbsp;</a>
+				<a href="#">出版物经营许可证&nbsp;&nbsp;<span>|</span>&nbsp;&nbsp;</a>
+				<a href="#">网络文化经营许可证京网文[2014]2148-348号&nbsp;&nbsp;<span>|</span>&nbsp;&nbsp;</a>
+				<a href="#">违法和不良信息举报电话：4006561155</a>
+			</div>
+			<div class="footer_word">
+				<a href="#">Copyright © 2004 - 2018  京东JD.com 版权所有&nbsp;&nbsp;<span>|</span>&nbsp;&nbsp;</a>
+				<a href="#">消费者维权热线：4006067733 &nbsp;经营证照&nbsp;&nbsp;<span>|</span>&nbsp;&nbsp;</a>
+				<a href="#">(京)网械平台备字(2018)第00003号&nbsp;&nbsp;<span>|</span>&nbsp;&nbsp;</a>
+				<a href="#">营业执照</a>
+			</div>
+			<div class="footer_word">
+				<a href="#"><img src="assets/images/flag1.png" alt="">Global Site&nbsp;&nbsp;<span>|</span>&nbsp;&nbsp;</a>
+				<a href="#"><img src="assets/images/flag2.png" alt="">Сайт России&nbsp;&nbsp;<span>|</span>&nbsp;&nbsp;</a>
+				<a href="#"><img src="assets/images/flag3.png" alt="">Situs Indonesia&nbsp;&nbsp;<span>|</span>&nbsp;&nbsp;</a>
+				<a href="#"><img src="assets/images/flag4.png" alt="">Sitio de España&nbsp;&nbsp;<span>|</span>&nbsp;&nbsp;</a>
+				<a href="#"><img src="assets/images/flag5.png" alt="">เว็บไซต์ประเทศไทย</a>
+			</div>
+			<div class="footer_word">
+				<a href="#">京东旗下网站：京东钱包&nbsp;&nbsp;<span>|</span>&nbsp;&nbsp;</a>
+				<a href="#">京东云&nbsp;&nbsp;</a>
+			</div>
+			<div class="footer_bottom">
+				<div class="fbottom_imgone"><img src="assets/images/f1.png" alt="" height="35px"></div>
+				<div class="fbottom_word">可信网站<br>信用评价</div>
+				<div class="fbottom_img"><img src="assets/images/f2.png" alt="" height="35px"></div>
+				<div class="fbottom_word">网络警察<br>提醒你</div>
+				<div class="fbottom_img"><img src="assets/images/f3.png" alt="" height="35px"></div>
+				<div class="fbottom_word fbot_speword">诚信网站</div>
+				<div class="fbottom_img"><img src="assets/images/f4.png" alt="" height="35px"></div>
+				<div class="fbottom_word">中国互联网<br>举报中心</div>
+				<div class="fbottom_img"><img src="assets/images/f5.png" alt="" height="35px"></div>
+				<div class="fbottom_word">网络举报<br>APP下载</div>
+			</div>
+		</div>
+	</div>
+	<script src="assets/js/details.js"></script>
+</body>
+</html>
