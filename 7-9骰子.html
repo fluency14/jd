@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>骰子</title>
+    <style>
+        .one,.two,.three,.four,.five,.six{
+            display: flex;
+            float: left;
+            margin-right: 20px;
+            width: 100px;
+            height: 100px;
+            box-shadow:0 0  5px  2px gray;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 10%;
+        }
+        .one{
+            justify-content: center;
+            align-items: center;
+        }
+        .two{
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .four,.six{
+            flex-wrap: wrap;
+        }
+        
+        .smallOne,.twoOne,.threeOne,.fourOne,.fiveOne,.sixOne{
+            width:30px;
+            height:30px;
+            border-radius: 50%;
+            background:black;
+        }
+        .twoOne,.threeOne{
+            width:30px;
+            height:30px;
+        }
+        .twoone,.threeone{
+            align-self: flex-start;
+        }
+        .twoTwo,.threeThree{
+            align-self: flex-end;
+        }
+        .threeTwo{
+            align-self: center;
+        }
+        .fourone{
+            align-self: flex-start;
+        }
+        .fourOne{
+            margin:10px;
+        }
+        .five {
+            flex-wrap:wrap;
+        }
+        .five-son{
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            height: 30px;
+        }
+        .sixOne{
+            /* margin: 10px; */
+        }
+        .six{
+            display: flex;
+            align-items: center;
+        }
+        .six-son {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="one">
+        <div class="smallOne"></div>
+    </div>
+    <div class="two">
+        <div class="twoOne twoone"></div>
+        <div class="twoOne twoTwo"></div>
+    </div>
+    <div class="three">
+        <div class="threeOne threeone"></div>
+        <div class="threeOne threeTwo"></div>
+        <div class="threeOne threeThree"></div>
+    </div>
+    <div class="four">
+        <div class="fourOne fourone"></div>
+        <div class="fourOne fourtwo"></div>
+        <div class="fourOne fourthree"></div>
+        <div class="fourOne fourfour"></div>
+    </div>
+    <div class="five">
+        <div class="five-son">
+            <div class="fiveOne"></div>
+            <div class="fiveOne"></div>
+        </div>
+        <div class="five-son">
+            <div class="fiveOne"></div>
+        </div>
+        <div class="five-son">
+            <div class="fiveOne"></div>
+            <div class="fiveOne"></div>
+        </div>
+        
+    </div>
+    <div class="six">
+        <div class="six-son">
+            <div class="sixOne"></div>
+            <div class="sixOne"></div>
+            <div class="sixOne"></div>
+        </div>
+        <div class="six-son">
+            <div class="sixOne"></div>
+            <div class="sixOne"></div>
+            <div class="sixOne"></div>
+        </div>
+       
+    </div>
+</body>
+</html>
